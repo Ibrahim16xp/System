@@ -335,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['!inv','!help'];	
+    var setGame = ['https://www.twitch.tv/xx_ibrahim15_xx','!help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
