@@ -203,7 +203,7 @@ client.on('guildBanAdd', function(guild) {
   guild.fetchAuditLogs().then(logs => {
     const ser = logs.entries.first().executor;
     if(!bane[ser.id+guild.id]) bane[ser.id+guild.id] = {
-      bans: 2
+      bans: 
     }
     let boner = bane[ser.id+guild.id]
 banse.add(ser.id)
@@ -335,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['https://www.twitch.tv/xx_ibrahim15_xx','https://www.twitch.tv/xx_ibrahim15_xx'];	
+    var setGame = ['https://www.twitch.tv/xx_ibrahim15_xx'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -346,7 +346,7 @@ j = 1;
             j = -1;	
       }	
        i = i+j;	
-        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);	
+        client.user.setGame(setGame[i],`https://www.twitch.tv/xx_ibrahim15_xx`);	
 }, ms);	
 	
 });
@@ -857,7 +857,7 @@ client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
 if (message.content.startsWith(adminprefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+  client.user.setGame(argresult, "https://www.twitch.tv/xx_ibrahim15_xx");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
